@@ -31,7 +31,9 @@ The most common pattern in merchant stacks encountered during Sortment onboardin
 
 ### 2. Method A: HubSpot Native Snowflake Data Share
 
-> **Snowflake-specific.** This method uses Snowflake's Secure Data Sharing technology and is only available to merchants whose data warehouse is Snowflake. Merchants on Redshift, BigQuery, Athena, or Databricks must use one of the ETL-based methods (B-F) instead.
+{% hint style="warning" %}
+**Snowflake-specific.** This method uses Snowflake's Secure Data Sharing technology and is only available to merchants whose data warehouse is Snowflake. Merchants on Redshift, BigQuery, Athena, or Databricks must use one of the ETL-based methods (B–F) instead.
+{% endhint %}
 
 #### How it works
 
@@ -89,7 +91,9 @@ Association tables are the join layer between objects. You need these to connect
 | ASSOCIATIONS\_CONTACTS\_TO\_FORMS              | Contact → Form submission                                        |
 | ASSOCIATIONS\_MARKETING\_EMAILS\_TO\_CAMPAIGNS | Email asset → Campaign (links the email content to the campaign) |
 
-> **Critical ID mismatch:** the `OBJECTID` in `OBJECTS_CAMPAIGNS` is not the same as `PROPERTY_HS_EMAIL_CAMPAIGN_ID` in event tables. HubSpot uses an internal content/asset ID for that field. Always validate this join in a sample query before building dashboards.
+{% hint style="danger" %}
+**Critical ID mismatch:** the `OBJECTID` in `OBJECTS_CAMPAIGNS` is not the same as `PROPERTY_HS_EMAIL_CAMPAIGN_ID` in event tables. HubSpot uses an internal content/asset ID for that field. Always validate this join in a sample query before building dashboards.
+{% endhint %}
 
 ***
 
@@ -261,7 +265,9 @@ Regardless of which pipeline method the merchant uses, the funnel logic follows 
 | Clicked      | EVENTS\_CLICKED\_LINK\_IN\_EMAIL\_V2 / EMAIL\_EVENT\_CLICK               | CTOR = unique clickers / unique openers. Also available: which URLs were clicked.                                                         |
 | Converted    | OBJECTS\_DEALS + ASSOCIATIONS\_CONTACTS\_TO\_DEALS (or FORM\_SUBMISSION) | No native email-to-deal event exists. Define conversion as: deal created within N days of a click on the campaign, joined via contact ID. |
 
-> **SQL syntax note:** The sample queries below use Snowflake / Redshift-compatible syntax (`DATEADD`). BigQuery uses `DATE_SUB(CURRENT_DATE(), INTERVAL 7 DAY)` and Databricks uses `CURRENT_DATE - INTERVAL 7 DAYS`. Adjust accordingly for the merchant's warehouse.
+{% hint style="info" %}
+**SQL syntax note:** The sample queries below use Snowflake / Redshift-compatible syntax (`DATEADD`). BigQuery uses `DATE_SUB(CURRENT_DATE(), INTERVAL 7 DAY)` and Databricks uses `CURRENT_DATE - INTERVAL 7 DAYS`. Adjust accordingly for the merchant's warehouse.
+{% endhint %}
 
 #### Sample SQL - Fivetran (sharded event tables)
 

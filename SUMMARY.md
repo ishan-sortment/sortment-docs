@@ -173,3 +173,8 @@
 * [Security Compliance](data-and-security/security-compliance.md)
 * [Audit Logs](data-and-security/audit-logs.md)
 * [Privacy Policy](data-and-security/privacy-policy.md)
+
+## Onboarding
+
+* [Overview](onboarding/README.md)
+* [HubSpot → Data Warehouse](<onboarding/HubSpot Data Warehouse Reference.md>)
