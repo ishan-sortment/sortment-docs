@@ -151,6 +151,7 @@
 ***
 
 * [Settings](settings/README.md)
+  * [Workspace Timezone](settings/workspace-timezone.md)
   * [Sync Schedules](settings/sync-schedules.md)
   * [Audit Logs](settings/audit-logs.md)
   * [Subscription Groups And Contact Fields](settings/subscription-groups-and-contact-fields.md)
