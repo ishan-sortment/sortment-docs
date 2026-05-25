@@ -24,8 +24,8 @@ While you can create audiences using our visual builder or even our SQL builder 
 
 **To create an audience, just tell Rho what you need.** For example, you can say:
 
-* "Rho, create an audience of customers who have made a purchase in the last 30 days and are located in California."
-* "Rho, I need an audience of users who have signed up but haven't completed their profile."
-* "Rho, create an audience of high-value customers who have spent over $500 in the last quarter."
+* "Create an audience of customers who have made a purchase in the last 30 days and are located in California."
+* "I need an audience of users who have signed up but haven't completed their profile."
+* "Create an audience of high-value customers who have spent over $500 in the last quarter."
 
-Rho will take care of the rest, translating your request into the necessary audience parameters and building it for you.&#x20;
+Rho will take care of the rest, translating your request into the necessary audience parameters and building it for you.

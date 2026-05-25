@@ -6,9 +6,9 @@ Once the schema is setup, you can start creating your audiences using data from 
 
 Building audiences requires an understanding of your business goals. Usually, business stakeholders like marketers complete this step.
 
-### Using Rho to create an audience
+### Using AI to create an audience
 
-Sortment’s **Ask AI** (Rho) lets you create complex audiences using natural language.
+Sortment’s **Ask AI** lets you create complex audiences using natural language.
 
 Lets create a audience for an eCommerce company in the US:
 
@@ -34,7 +34,7 @@ Lets create a audience for an eCommerce company in the US:
 
 ### Creating audience using visual builder
 
-1.  &#x20;Go to Audiences page and click + Create Audience.<br>
+1.  Go to Audiences page and click + Create Audience.<br>
 
     <figure><img src="../../.gitbook/assets/b7 (1).png" alt=""><figcaption></figcaption></figure>
 2. Build your audience using filters and groups. The fields defined in the schema are usable in the visual builder.
@@ -46,7 +46,7 @@ Lets create a audience for an eCommerce company in the US:
     <figure><img src="../../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
 5. Give the audience a name, and optionally a description to add more context to your audience.
 6. If you want to save your progress and work on the audience later, click **Save as draft**.
-7.  If you want to save this audience to use into Journeys, click **Save and publish**. This will take you through data preview and setting up an audience sync. <br>
+7.  If you want to save this audience to use into Journeys, click **Save and publish**. This will take you through data preview and setting up an audience sync.<br>
 
     <figure><img src="../../.gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure>
 
@@ -58,4 +58,4 @@ Lets create a audience for an eCommerce company in the US:
 
 5. Provide a name and optionally, a description to add context
 6. To save this audience for use in Journeys or Campaigns, click **Save and publish**. This will guide you through data preview and audience sync setup.
-7. To save your progress for later, click **Save as draft**.&#x20;
+7. To save your progress for later, click **Save as draft**.
