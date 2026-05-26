@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Sortment for beginners
 
 ## How Sortment Works

@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Getting the Most Out of Sortment AI
 
 Sortment has a built-in AI agent that works across the entire product as a team member helping you to builds real things inside Sortment from plain language prompts: audiences, custom properties, templates, campaigns, journeys, and analysis. Everything it creates goes into Draft so you can review before anything goes live.
