@@ -24,13 +24,17 @@ Go to **Settings → Sortment AI → Intelligence**
 
 ### How to Create an Intelligence Block
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+1.  Go to **Workspace settings → Intelligence**<br>
 
-1. Go to **Workspace settings → Intelligence**
+    <figure><img src="../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
 2. Click **New block**
 3. Provide the purpose for this intelligence block like "defining and business KPIs"&#x20;
-4. Select the categories ("Business Context", "Data Definitions", "Data Analysis", "Attribute Creation","Engagement Strategy","Audience Creation","Business Context")
-5. Add the content - either type it directly or attach a file (PDF, document)
+4.  Select the categories ("Business Context", "Data Definitions", "Data Analysis", "Attribute Creation","Engagement Strategy","Audience Creation","Business Context")<br>
+
+    <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+5.  Add the content - either type it directly or attach a file (PDF, document)
+
+    <figure><img src="../.gitbook/assets/image (71).png" alt=""><figcaption></figcaption></figure>
 6. Click **Save**
 
 The AI will reference this block whenever the context is required for all future actions in the workspace.
