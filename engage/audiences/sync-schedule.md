@@ -25,7 +25,7 @@ From audience manager, click on action menu for any audience and click **Change 
 1.  Hourly\
     Choose after how many hours you want the audience to be synced back into the warehouse<br>
 
-    <figure><img src="../../.gitbook/assets/image (79).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (78).png" alt=""><figcaption></figcaption></figure>
 2.  Daily\
     Choose after how many days you want the audience to be synced back into the warehouse<br>
 
@@ -33,11 +33,10 @@ From audience manager, click on action menu for any audience and click **Change 
 3.  Weekly\
     Choose after how many weeks you want the audience to be synced back into the warehouse. You can choose specific days of the week to schedule multiple runs during a week.<br>
 
-    <figure><img src="../../.gitbook/assets/image (83).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (81).png" alt=""><figcaption></figcaption></figure>
 4. Monthly\
    There are two options to set a sync frequency for monthly runs. You can choose specific dates (for example, 10th of every month) or choose day of the month (for example, second Wednesday). Both examples are added below
 
 <figure><img src="../../.gitbook/assets/image (82).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (84).png" alt=""><figcaption></figcaption></figure>
-

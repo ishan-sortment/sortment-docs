@@ -20,7 +20,7 @@ This guide walks you through how to create, configure, test, and launch a campai
 * This name is also used as the default `utm_campaign` value for any tracked links — choose something concise and meaningful.
 * We recommend to provide additional description and tags to your campaign for easier access.
 
-<figure><img src="../../.gitbook/assets/image (26).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (25).png" alt="" width="375"><figcaption></figcaption></figure>
 
 ***
 
@@ -37,11 +37,11 @@ This is where you decide _how_ and _from where_ the campaign will be sent.
 
 <summary>More inputs for Email</summary>
 
-Following extra fields are required in email campaign setup.&#x20;
+Following extra fields are required in email campaign setup.
 
 * **Sender Name**: What recipients will see as the “From” name.
 * **Reply-To Address** : Email where the replies should be directed.
-* **Subscription Groups**: User preference group the campaign belongs to –  this ensures it is sent only to users who have explicitly opted in or not unsubscribed from this type of communication. More details on setup and usage available in the [document here](../../settings/subscription-groups-and-contact-fields.md).
+* **Subscription Groups**: User preference group the campaign belongs to – this ensures it is sent only to users who have explicitly opted in or not unsubscribed from this type of communication. More details on setup and usage available in the [document here](../../settings/subscription-groups-and-contact-fields.md).
 
 </details>
 
@@ -55,7 +55,7 @@ Following extra fields are required in email campaign setup.&#x20;
 
 Pick the audience that should receive the campaign. You can pick multiple audiences if you want to target different segments through a campaign. You can setup the audience for the campaign with the follwoing:
 
-* **Send list**: Select an audience previously published or upload a static list.&#x20;
+* **Send list**: Select an audience previously published or upload a static list.
 * **Suppress List (optional)**: Exclude users from a secondary list. Supress list will not be available for upload static list option.
 
 <figure><img src="../../.gitbook/assets/image (12).png" alt="" width="375"><figcaption></figcaption></figure>
@@ -139,7 +139,7 @@ If `{{ var1 }}` is mapped to Full Name and `{{ var2 }}` to Email Address, your c
 
 > _Hello \{{ var1 \}} (\{{ var2 \}})_\
 > And render as:\
-> &#xNAN;_&#x48;ello Jane Doe (jane@example.com)_
+> \&#xNAN;_Hello Jane Doe (jane@example.com)_
 
 💡 _Tip: Ensure all selected users have values for the personalization fields to avoid rendering issues in the final message._
 
@@ -175,10 +175,10 @@ Once all steps are complete:
 
 1. Click **Launch** (top-right).
 2. Choose one of the following options:
-   * **Send Now:**  Immediately launch the campaign.
+   * **Send Now:** Immediately launch the campaign.
    * **Schedule for Later:** Set a future time for the campaign to be sent. You can also schedule recurring campaigns (e.g., daily, weekly, monthly) to automate regular outreach.
 3. Confirm all configuration steps: Double-check your audience, message content, and channel setup.
-4. Monitor progress under the [**Campaigns**](campaign-reports/) tab:  Track delivery, engagement, and other performance metrics in real-time.
+4. Monitor progress under the [**Campaigns**](campaign-reports/) tab: Track delivery, engagement, and other performance metrics in real-time.
 
 ***
 
@@ -212,4 +212,3 @@ To upload a CSV, click **Edit** in the Audience section, then select [**Upload S
 * Engagement or behavioural data (such as clicks or opens) **cannot be used** for audience filtering in these campaigns.
 * Ensure your CSV includes all required fields for the selected channel (e.g., email address or phone number).
 * Some of the features will not work as expected on Sortment if you send a CSV based campaign: frequency capping and supression list. You will also not have access to fields stored in warehouse. If you are uploading a CSV with userids, same as in the warehouse, we suggest you upload it to the schema (admin permission required)
-

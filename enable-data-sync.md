@@ -14,7 +14,7 @@ Choose the user attributes you’d like to include in the sync. Only selected fi
 * **Traits**: Examples include _Lifetime Value (LTV)_, _Customer Since_, or _Is Loyal?_
 * **User properties**: Consider syncing data like _check-in history_ or _churn date_ for more personalised messaging.
 
-<figure><img src=".gitbook/assets/a1 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/a1.png" alt=""><figcaption></figcaption></figure>
 
 #### Step 3: Choose destination
 

@@ -1,8 +1,6 @@
 # Email templates with Sortment AI
 
-
-
-Sortment lets you generate email templates using AI by describing your campaign goal and target audience&#x20;
+Sortment lets you generate email templates using AI by describing your campaign goal and target audience
 
 > Ensure your brand guidelines, email design, and style preferences have been configured in the **AI Intelligence** settings before using this feature.
 
@@ -17,7 +15,7 @@ Sortment lets you generate email templates using AI by describing your campaign 
 3. Select **Email**
 4.  Click **Create New**
 
-    <figure><img src="../.gitbook/assets/image (154).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (153).png" alt=""><figcaption></figcaption></figure>
 5. The **New Template** panel opens with the AI prompt UI
 
 <figure><img src="../.gitbook/assets/image (156).png" alt=""><figcaption></figcaption></figure>
@@ -72,7 +70,7 @@ Sortment AI will produce a fully designed email template based on your goal, aud
 
 After generation, the template opens directly in the email editor. You can:
 
-* Edit copy, subject line, and layout manually or using the AI prompt box at the bottom of the screen.&#x20;
+* Edit copy, subject line, and layout manually or using the AI prompt box at the bottom of the screen.
 * Swap or update images and CTAs
 * Adjust styling to match your campaign needs
 
