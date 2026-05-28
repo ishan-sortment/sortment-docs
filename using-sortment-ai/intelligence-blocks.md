@@ -2,9 +2,9 @@
 
 ## Overview
 
-Intelligence blocks are the AI's long-term memory for your workspace. They are how you give Sortment AI the context it needs to work accurately — your business definitions, your data structure, your brand guidelines, and anything else the AI should know before it builds something for you.
+Intelligence blocks are the AI's long-term memory for your workspace. They are how you give Sortment AI the context it needs to work accurately - your business definitions, your data structure, your brand guidelines, and anything else the AI should know before it builds something for you.
 
-Every time the AI assistant takes an action — building an audience, writing a template, creating a journey, surfacing a recommendation — it reads all intelligence blocks first.
+Every time the AI assistant takes an action - building an audience, writing a template, creating a journey, surfacing a recommendation, it reads all intelligence blocks first.
 
 ***
 
@@ -14,7 +14,7 @@ Sortment AI knows your schema. It can see your tables, your columns, and how the
 
 Without intelligence blocks, the AI is working without context. It does not know what "lapsed" means at your company, what tone your brand uses, which channel you prefer for different use cases, or what a successful conversion looks like for your goals. The outputs it produces will be technically valid but not tailored to you.
 
-With well-maintained intelligence blocks, the AI produces outputs you can use immediately — audiences that match your actual definitions, templates that sound like your brand, journeys that reflect your real use cases.
+With well-maintained intelligence blocks, the AI produces outputs you can use immediately; audiences that match your actual definitions, templates that sound like your brand, journeys that reflect your real use cases.
 
 > The quality of every AI output is directly proportional to the quality of your intelligence blocks and the information provided in the prompt. This is one of the most important setup step to derive more meaningful output by the AI.
 
