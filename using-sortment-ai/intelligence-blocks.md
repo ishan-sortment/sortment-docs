@@ -18,8 +18,6 @@ With well-maintained intelligence blocks, the AI produces outputs you can use im
 
 > The quality of every AI output is directly proportional to the quality of your intelligence blocks and the information provided in the prompt. This is one of the most important setup step to derive more meaningful output by the AI.
 
-Go to **Settings → Sortment AI → Intelligence**
-
 ***
 
 ### How to Create an Intelligence Block
