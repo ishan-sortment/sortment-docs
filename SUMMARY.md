@@ -7,10 +7,6 @@
 * [Getting the Most Out of Sortment AI](getting-started/getting-the-most-out-of-sortment-ai.md)
 * [Core Concepts](getting-started/core-concepts.md)
 
-## Using Sortment AI
-
-* [Intelligence blocks](using-sortment-ai/intelligence-blocks.md)
-
 ## Schema
 
 * [Overview](schema/overview.md)
