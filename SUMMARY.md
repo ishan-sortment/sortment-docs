@@ -185,3 +185,7 @@
 
 * [Overview](onboarding/README.md)
 * [HubSpot → Data Warehouse](<onboarding/HubSpot Data Warehouse Reference.md>)
+
+## Settings (under the *** divider block)
+
+* [Workspace Timezone](settings/workspace-timezone.md)
