@@ -60,6 +60,7 @@
   * [Tutorial: Creating a journey](journeys/tutorial-creating-a-journey.md)
   * [Journey Settings](journeys/journey-settings.md)
 
+    * [Throttling](engage/campaigns/throttling.md)
 ## Connector
 
 * [Whatsapp](connector/whatsapp/README.md)
