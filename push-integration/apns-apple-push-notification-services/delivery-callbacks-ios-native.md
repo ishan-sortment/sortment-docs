@@ -1,11 +1,13 @@
 # Delivery callbacks (iOS Native)
 
-Each notification triggered through Sortment carries a `callback` URL in its data payload. To track delivery and interaction, your app reads that URL and sends a `POST` request with the relevant status (`RECEIVED` or `CLICKED`) back to it.
+Each notification triggered through Sortment carries a callback URL in its payload. To track delivery and interaction, your app reads that URL and sends a `POST` request with the relevant status (`RECEIVED` or `CLICKED`) back to it.
 
 On a native iOS app this is wired up in two places:
 
 * A **Notification Service Extension** reports `RECEIVED` whenever a notification is delivered, in every app state.
 * Your **`AppDelegate`** reports `CLICKED` when the user taps a notification.
+
+Both read the callback URL from the same place in the payload, using the shared helper shown below.
 
 ***
 
@@ -64,13 +66,7 @@ class NotificationService: UNNotificationServiceExtension {
         self.contentHandler = contentHandler
         self.bestAttemptContent = request.content.mutableCopy() as? UNMutableNotificationContent
 
-        let userInfo = request.content.userInfo
-
-        // Extract the callback URL from the data payload
-        guard
-            let callbackUrlString = userInfo["callback"] as? String,
-            let callbackUrl = URL(string: callbackUrlString)
-        else {
+        guard let callbackUrl = callbackUrl(from: request.content.userInfo) else {
             deliver()
             return
         }
@@ -89,6 +85,29 @@ class NotificationService: UNNotificationServiceExtension {
         }.resume()
     }
 
+    /// Reads the callback URL from the notification payload. The URL is nested
+    /// inside `extraData`, which is a JSON string when the message is sent via
+    /// FCM and a dictionary when sent via APNs.
+    private func callbackUrl(from userInfo: [AnyHashable: Any]) -> URL? {
+        let provider = userInfo["provider"] as? String
+        var callbackString: String?
+
+        if provider == "fcm",
+           let extraData = userInfo["extraData"] as? String,
+           let data = extraData.data(using: .utf8),
+           let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any] {
+            callbackString = json["callback"] as? String
+        } else if provider == "apns",
+                  let extraData = userInfo["extraData"] as? [String: Any] {
+            callbackString = extraData["callback"] as? String
+        }
+
+        guard let callbackString, let url = URL(string: callbackString) else {
+            return nil
+        }
+        return url
+    }
+
     /// Hands the notification to the system for display.
     private func deliver() {
         if let contentHandler = contentHandler, let bestAttemptContent = bestAttemptContent {
@@ -104,13 +123,13 @@ class NotificationService: UNNotificationServiceExtension {
 }
 ```
 
-The extension has roughly a 30-second window. The notification is displayed as soon as the receipt request returns, and `serviceExtensionTimeWillExpire()` ensures it still shows even if the network is slow.
-
 ***
 
 **2. Notification Clicked (`CLICKED`)**
 
 When the user taps a notification to open the app, from either the background or a closed state, iOS routes both cases through `userNotificationCenter(_:didReceive:withCompletionHandler:)`. Add this method to your `AppDelegate`.
+
+The `callbackUrl(from:)` helper is the same as the one in the extension. It is repeated here because the extension and the app are separate targets and do not share code.
 
 ```swift
 extension AppDelegate {
@@ -121,29 +140,44 @@ extension AppDelegate {
         withCompletionHandler completionHandler: @escaping () -> Void
     ) {
         let userInfo = response.notification.request.content.userInfo
-        sendClickedStatus(userInfo: userInfo)
+
+        if let callbackUrl = callbackUrl(from: userInfo) {
+            var request = URLRequest(url: callbackUrl)
+            request.httpMethod = "POST"
+            request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+            request.httpBody = try? JSONSerialization.data(withJSONObject: ["status": "CLICKED"])
+
+            URLSession.shared.dataTask(with: request) { _, _, error in
+                if let error = error {
+                    print("[FCM] Failed to send CLICKED callback: \(error)")
+                }
+            }.resume()
+        }
+
         completionHandler()
     }
 
-    /// Sends the CLICKED status to the callback URL from the notification payload.
-    private func sendClickedStatus(userInfo: [AnyHashable: Any]) {
-        guard
-            let callbackUrlString = userInfo["callback"] as? String,
-            let callbackUrl = URL(string: callbackUrlString)
-        else {
-            return
+    /// Reads the callback URL from the notification payload. The URL is nested
+    /// inside `extraData`, which is a JSON string when the message is sent via
+    /// FCM and a dictionary when sent via APNs.
+    private func callbackUrl(from userInfo: [AnyHashable: Any]) -> URL? {
+        let provider = userInfo["provider"] as? String
+        var callbackString: String?
+
+        if provider == "fcm",
+           let extraData = userInfo["extraData"] as? String,
+           let data = extraData.data(using: .utf8),
+           let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any] {
+            callbackString = json["callback"] as? String
+        } else if provider == "apns",
+                  let extraData = userInfo["extraData"] as? [String: Any] {
+            callbackString = extraData["callback"] as? String
         }
 
-        var request = URLRequest(url: callbackUrl)
-        request.httpMethod = "POST"
-        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.httpBody = try? JSONSerialization.data(withJSONObject: ["status": "CLICKED"])
-
-        URLSession.shared.dataTask(with: request) { _, _, error in
-            if let error = error {
-                print("[FCM] Failed to send CLICKED callback: \(error)")
-            }
-        }.resume()
+        guard let callbackString, let url = URL(string: callbackString) else {
+            return nil
+        }
+        return url
     }
 }
 ```
