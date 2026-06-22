@@ -26,13 +26,13 @@ With well-maintained intelligence blocks, the AI produces outputs you can use im
 
     <figure><img src="../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
 2. Click **New block**
-3. Provide the purpose for this intelligence block like "defining and business KPIs"&#x20;
+3. Provide the purpose for this intelligence block like "defining and business KPIs"
 4.  Select the categories ("Business Context", "Data Definitions", "Data Analysis", "Attribute Creation","Engagement Strategy","Audience Creation","Business Context")<br>
 
     <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 5.  Add the content - either type it directly or attach a file (PDF, document)
 
-    <figure><img src="../.gitbook/assets/image (71).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
 6. Click **Save**
 
 The AI will reference this block whenever the context is required for all future actions in the workspace.
@@ -76,7 +76,7 @@ You can directly get a list of SQLs and their purposes on a txt or a pdf and dir
 
 Tell the AI how your brand communicates so that templates and campaign copy it generates match your style.
 
-**What to include:**&#x20;
+**What to include:**
 
 * Brand tone (e.g. "Friendly and direct. Not formal.")
 * How to address users (e.g. "Always use first name")
@@ -86,7 +86,7 @@ Tell the AI how your brand communicates so that templates and campaign copy it g
 * Anything to avoid (e.g. "Never use exclamation marks in subject lines")
 
 {% hint style="info" %}
-If you do not have any existing content and want to start with something, you can always go to the community templates on Sortment and select any that you like from thousands of available template. Ask the AI to make changes on that template as you desire and then let Sortment AI extract the content and design guidelines from the created templates.&#x20;
+If you do not have any existing content and want to start with something, you can always go to the community templates on Sortment and select any that you like from thousands of available template. Ask the AI to make changes on that template as you desire and then let Sortment AI extract the content and design guidelines from the created templates.
 {% endhint %}
 
 ***

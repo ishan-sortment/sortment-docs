@@ -94,7 +94,8 @@
 ## Push integration
 
 * [Google FCM](push-integration/google-fcm.md)
-* [APNs (Apple Push Notification services)](push-integration/apns-apple-push-notification-services.md)
+* [APNs (Apple Push Notification services)](push-integration/apns-apple-push-notification-services/README.md)
+  * [Delivery callbacks (iOS Native)](push-integration/apns-apple-push-notification-services/delivery-callbacks-ios-native.md)
 
 ## Email
 
