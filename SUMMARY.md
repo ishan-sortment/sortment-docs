@@ -172,6 +172,7 @@
 * [Bulk Unsubscribe](how-to-guides/bulk-unsubscribe.md)
 * [Invite team members](how-to-guides/invite-team-members.md)
 * [Switch workspaces](how-to-guides/switch-workspaces.md)
+* [Upload and edit data with AI](how-to-guides/upload-and-edit-data-with-ai.md)
 
 ## Data and Security
 
