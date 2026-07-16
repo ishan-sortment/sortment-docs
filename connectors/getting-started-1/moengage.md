@@ -8,7 +8,7 @@ Sortment supports syncing the following data to MoEngage:
 
 * **Audience:** Audiences from Sortment are synced as customers in MoEngage.
 * **User Properties:** User properties stored in your data warehouse are automatically mapped and synced as MoEngage user attributes.
-* **User Traits:**  Custom traits defined in Sortment can be synced to MoEngage as user attributes. These traits are formatted in snake\_case. For example, “Active Uber Black Riders” will be converted to “active\_uber\_black\_riders” before being transferred to MoEngage.
+* **User Traits:** Custom traits defined in Sortment can be synced to MoEngage as user attributes. These traits are formatted in snake\_case. For example, “Active Uber Black Riders” will be converted to “active\_uber\_black\_riders” before being transferred to MoEngage.
 
 ### Connection configuration
 
@@ -19,14 +19,12 @@ To connect Sortment to MoEngage, you need the following:
 
 **To generate your API token from MoEngage:**
 
-1. Navigate to  [API Setting page](https://dashboard-01.moengage.com/v3/#/settings/api/general) in your MoEngage account.
+1. Navigate to [API Setting page](https://dashboard-01.moengage.com/v3/#/settings/api/general) in your MoEngage account.
 2. Copy the following details:
    * Workspace ID: Under **Workspace ID**, click the copy icon to copy the username.
    * Data API Key: In the **API keys** section, click the copy icon in the **Data** tile to copy the API key.
 
-
-
-<figure><img src="../.gitbook/assets/image (144).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (144).png" alt=""><figcaption></figcaption></figure>
 
 For detailed instructions on generating a Data API Key and finding your Data API ID, please refer to [MoEngage’s API documentation](https://developers.moengage.com/hc/en-us/articles/4404674776724-Overview#01H815VFPB3Y06MX539856QSK4).
 
@@ -50,4 +48,4 @@ Sortment enables you to map user attributes and traits from the Sortment workspa
 
 ### Need help?
 
-For assistance, please reach out to our support team at  [support@sortment.com.](mailto:support@sortment.com)
+For assistance, please reach out to our support team at [support@sortment.com.](mailto:support@sortment.com)

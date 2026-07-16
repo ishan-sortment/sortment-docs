@@ -60,42 +60,27 @@
   * [Tutorial: Creating a journey](journeys/tutorial-creating-a-journey.md)
   * [Journey Settings](journeys/journey-settings.md)
 
-## Connector
+## SMS
 
-* [Whatsapp](connector/whatsapp/README.md)
-  * [Meta](connector/whatsapp/meta/README.md)
-    * [Meta (By Facebook)](connector/whatsapp/meta/meta-by-facebook.md)
-    * [Meta Direct Plus](connector/whatsapp/meta/meta-direct-plus.md)
-    * [Meta Direct](connector/whatsapp/meta/meta-direct.md)
-  * [MessageBird](connector/whatsapp/messagebird.md)
-  * [Karix](connector/whatsapp/karix.md)
-  * [Kaleyra](connector/whatsapp/kaleyra.md)
-  * [Interakt](connector/whatsapp/interakt.md)
-  * [Infobip](connector/whatsapp/infobip.md)
-  * [Gupshup](connector/whatsapp/gupshup.md)
-  * [Gupshup Enterprise](connector/whatsapp/gupshup-enterprise.md)
-  * [Gallabox](connector/whatsapp/gallabox.md)
-  * [Freshchat](connector/whatsapp/freshchat.md)
-  * [Connectly](connector/whatsapp/connectly.md)
-  * [AiSensy](connector/whatsapp/aisensy.md)
+* [Page 1](sms/page-1.md)
 
-***
+## Whatsapp
 
-* [Getting started](getting-started-1/README.md)
-  * [Iterable](getting-started-1/iterable.md)
-  * [Klaviyo](getting-started-1/klaviyo.md)
-  * [MoEngage](getting-started-1/moengage.md)
-  * [Marketo](getting-started-1/marketo.md)
-  * [SalesForce Marketing Cloud](getting-started-1/salesforce-marketing-cloud.md)
-  * [Responsys](getting-started-1/responsys.md)
-  * [Braze](getting-started-1/braze.md)
-  * [Hubspot](getting-started-1/hubspot.md)
-
-## Push integration
-
-* [Google FCM](push-integration/google-fcm.md)
-* [APNs (Apple Push Notification services)](push-integration/apns-apple-push-notification-services/README.md)
-  * [Delivery callbacks (iOS Native)](push-integration/apns-apple-push-notification-services/delivery-callbacks-ios-native.md)
+* [Meta](whatsapp/meta/README.md)
+  * [Meta (By Facebook)](whatsapp/meta/meta-by-facebook.md)
+  * [Meta Direct Plus](whatsapp/meta/meta-direct-plus.md)
+  * [Meta Direct](whatsapp/meta/meta-direct.md)
+* [MessageBird](whatsapp/messagebird.md)
+* [Karix](whatsapp/karix.md)
+* [Kaleyra](whatsapp/kaleyra.md)
+* [Interakt](whatsapp/interakt.md)
+* [Infobip](whatsapp/infobip.md)
+* [Gupshup](whatsapp/gupshup.md)
+* [Gupshup Enterprise](whatsapp/gupshup-enterprise.md)
+* [Gallabox](whatsapp/gallabox.md)
+* [Freshchat](whatsapp/freshchat.md)
+* [Connectly](whatsapp/connectly.md)
+* [AiSensy](whatsapp/aisensy.md)
 
 ## Email
 
@@ -113,9 +98,24 @@
 * [Sparkpost](email/sparkpost.md)
 * [ValueFirst (Email)](email/valuefirst-email.md)
 
-***
+## Push integration
 
-* [Enable Data Sync](enable-data-sync.md)
+* [Google FCM](push-integration/google-fcm.md)
+* [APNs (Apple Push Notification services)](push-integration/apns-apple-push-notification-services/README.md)
+  * [Delivery callbacks (iOS Native)](push-integration/apns-apple-push-notification-services/delivery-callbacks-ios-native.md)
+
+## Connectors
+
+* [Getting started](connectors/getting-started-1/README.md)
+  * [Iterable](connectors/getting-started-1/iterable.md)
+  * [Klaviyo](connectors/getting-started-1/klaviyo.md)
+  * [MoEngage](connectors/getting-started-1/moengage.md)
+  * [Marketo](connectors/getting-started-1/marketo.md)
+  * [SalesForce Marketing Cloud](connectors/getting-started-1/salesforce-marketing-cloud.md)
+  * [Responsys](connectors/getting-started-1/responsys.md)
+  * [Braze](connectors/getting-started-1/braze.md)
+  * [Hubspot](connectors/getting-started-1/hubspot.md)
+* [Enable Data Sync](connectors/enable-data-sync.md)
 
 ## Setup
 
@@ -154,6 +154,7 @@
   * [Setting up Event Source](setup/real-time-events/setting-up-event-source.md)
   * [Whitelist Event Payload](setup/real-time-events/whitelist-event-payload.md)
 * [SSO login via Okta](setup/sso-login-via-okta.md)
+* [Query Logs Access Configuration](setup/query-logs-access-configuration.md)
 
 ***
 

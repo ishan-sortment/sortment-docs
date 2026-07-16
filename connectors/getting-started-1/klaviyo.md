@@ -16,7 +16,7 @@ To connect Sortment to Klaviyo, you will need the following:
 
 **Klaviyo Private API Key:** Create a private API key in your Klaviyo account with permissions to read and write Profiles and Lists.
 
-<figure><img src="../.gitbook/assets/New Sortment Key 1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/New Sortment Key 1.png" alt=""><figcaption></figcaption></figure>
 
 **To generate your API key:**
 
