@@ -175,6 +175,11 @@
 * [Switch workspaces](how-to-guides/switch-workspaces.md)
 * [Upload and edit data with AI](how-to-guides/upload-and-edit-data-with-ai.md)
 
+## FAQ
+
+* [Overview](faq/README.md)
+* [Push Delivery on Oppo, Vivo, OnePlus & Xiaomi Devices](faq/push-delivery-oem-devices.md)
+
 ## Data and Security
 
 * [Technical Overview](data-and-security/technical-overview.md)
@@ -188,4 +193,3 @@
 
 * [Overview](onboarding/README.md)
 * [HubSpot → Data Warehouse](<onboarding/HubSpot Data Warehouse Reference.md>)
-* [Push Delivery on Oppo, Vivo, OnePlus & Xiaomi Devices](onboarding/push-delivery-oem-devices.md)
