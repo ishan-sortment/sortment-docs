@@ -180,6 +180,7 @@
 * [Overview](faq/README.md)
 * [Push Delivery on Oppo, Vivo, OnePlus & Xiaomi Devices](faq/push-delivery-oem-devices.md)
 * [A/B Testing in Campaigns](faq/ab-testing-in-campaigns.md)
+* [Sortment vs. Hightouch](faq/sortment-vs-hightouch.md)
 
 ## Data and Security
 
