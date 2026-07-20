@@ -31,8 +31,6 @@
   * [Managing Audiences](engage/audiences/managing-audiences.md)
   * [Sync Schedule](engage/audiences/sync-schedule.md)
   * [Audience Insights](engage/audiences/audience-insights.md)
-* [KPIs](engage/kpis/README.md)
-  * [Setting Up a KPI](engage/kpis/setting-up-a-kpi.md)
 * [Attributes](engage/attributes/README.md)
   * [Use Cases](engage/attributes/use-cases.md)
   * [Calculated Attributes](engage/attributes/calculated-attributes/README.md)
