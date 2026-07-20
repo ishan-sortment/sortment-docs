@@ -62,7 +62,29 @@
 
 ## SMS
 
-* [Page 1](sms/page-1.md)
+* [BSNL](sms/page-1.md)
+* [Exotel](sms/exotel.md)
+* [Infobip](sms/infobip.md)
+* [Infronics](sms/infronics.md)
+* [JioCx](sms/jiocx.md)
+* [Kaleyra Global](sms/kaleyra-global.md)
+* [Kaleyra.io](sms/kaleyra.io.md)
+* [Karix](sms/karix.md)
+* [Ozonetel](sms/ozonetel.md)
+* [OneXtel](sms/onextel.md)
+* [MessageBird](sms/messagebird.md)
+* [MSG91](sms/msg91.md)
+* [Mtalkz](sms/mtalkz.md)
+* [Netcore](sms/netcore.md)
+* [Plivo](sms/plivo.md)
+* [Route Mobile](sms/route-mobile.md)
+* [Sinch](sms/sinch.md)
+* [Smartping](sms/smartping.md)
+* [Syniverse](sms/syniverse.md)
+* [telSpiel](sms/telspiel.md)
+* [TrustSignal](sms/trustsignal.md)
+* [Twilio](sms/twilio.md)
+* [ValueFirst](sms/valuefirst.md)
 
 ## Whatsapp
 
