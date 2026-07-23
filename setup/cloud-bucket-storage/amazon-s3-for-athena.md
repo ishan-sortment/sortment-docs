@@ -1,6 +1,8 @@
 # Amazon S3 for Athena
 
-## Overview
+## Amazon S3 for Athena
+
+### Overview
 
 When Sortment needs to move data into or out of your Athena warehouse, it uses S3 as an intermediate storage layer. This is separate from your query results bucket and your data tables bucket.
 
@@ -11,7 +13,7 @@ Two operations use this bucket:
 
 This setup is only needed if you are using Sortment's data import or export features. It is not required for the initial Athena connection.
 
-### Connection Configuration
+#### Connection Configuration
 
 The following details are required in Sortment for S3 blob storage configuration:
 
@@ -23,7 +25,7 @@ The following details are required in Sortment for S3 blob storage configuration
 | Access Key ID                 | Access Key ID for the IAM user that has permissions on this bucket.                                                                 |
 | Secret Access Key             | Secret Access Key paired with the above. Only shown once at creation time.                                                          |
 
-### Bucket Setup
+#### Bucket Setup
 
 You can use your existing Athena S3 bucket and add a dedicated prefix for blob operations, or create a separate bucket entirely. Either works as long as the IAM user has the right permissions.
 
@@ -35,7 +37,7 @@ If you need to create a new bucket:
 4. Leave other settings as default and create the bucket
 5. Inside the bucket, create a folder for blob operations (for example, `sortment-sync/`)
 
-### IAM Permissions
+#### IAM Permissions
 
 Create or update the IAM policy for the user that Sortment uses, and add the following statement for the blob bucket:
 
@@ -45,6 +47,7 @@ Create or update the IAM policy for the user that Sortment uses, and add the fol
   "Action": [
     "s3:PutObject",
     "s3:GetObject",
+    "s3:DeleteObject",
     "s3:GetBucketLocation",
     "s3:ListBucket",
     "s3:AbortMultipartUpload",
@@ -59,9 +62,9 @@ Create or update the IAM policy for the user that Sortment uses, and add the fol
 
 Replace `<blob-bucket>` and `<blob-prefix>` with your actual bucket name and folder prefix.
 
-`AbortMultipartUpload` and `ListMultipartUploadParts` are required because Sortment uses multipart uploads when writing large files to S3 during export operations.
+`AbortMultipartUpload` and `ListMultipartUploadParts` are required because Sortment uses multipart uploads when writing large files to S3 during export operations. `DeleteObject` is required for Sortment to remove blob files from this bucket.
 
-### Attaching the Policy to Your IAM User
+#### Attaching the Policy to Your IAM User
 
 1. Go to **AWS Console > IAM > Users**
 2. Select the user you created for Sortment (for example, `sortment-athena-user`)
