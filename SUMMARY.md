@@ -10,6 +10,7 @@
 ## Using Sortment AI
 
 * [Intelligence blocks](using-sortment-ai/intelligence-blocks.md)
+* [KPIs](using-sortment-ai/kpis.md)
 
 ## Schema
 
