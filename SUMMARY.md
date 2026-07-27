@@ -6,6 +6,7 @@
 * [Sortment for beginners](getting-started/sortment-for-beginners.md)
 * [Getting the Most Out of Sortment AI](getting-started/getting-the-most-out-of-sortment-ai.md)
 * [Core Concepts](getting-started/core-concepts.md)
+* [Contact Us](getting-started/contact-us.md)
 
 ## Using Sortment AI
 
