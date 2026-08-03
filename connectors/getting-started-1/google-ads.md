@@ -16,5 +16,4 @@ Sortment connects to Google Ads, letting Sortment AI query campaigns and ad grou
 ### What can this power
 
 * A view of the customer journey starting from a Google Ads click, through to product login and lifecycle engagement
-* Building or updating Google Ads customer lists directly from a Sortment-defined audience, without a manual export
 * Understanding which campaigns and keywords are driving the best downstream outcomes, not just clicks
