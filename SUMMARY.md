@@ -138,6 +138,7 @@
 
 ## Connectors
 
+* [Slack Integration](connectors/slack-integration.md)
 * [Getting started](connectors/getting-started-1/README.md)
   * [GitHub](connectors/getting-started-1/github.md)
   * [Linear](connectors/getting-started-1/linear.md)
