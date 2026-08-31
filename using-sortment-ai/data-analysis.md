@@ -22,7 +22,7 @@ A few things worth knowing about how this works:
 
 * The AI only knows what's in the warehouse schema and your intelligence blocks. If your business context isn't documented anywhere Sortment can see it, the AI will guess at definitions instead of using your actual ones. Setting up a data context intelligence block (table names, column meanings, key values) makes analysis answers much more reliable.
 * You can also set this up as a recurring task instead of a one-off question, for example: "every Monday, check which campaigns had below-average click rates last week." Recurring analysis tasks feed directly into the home page insights feed.
-* Always validate AI-generated SQL before treating the output as final, especially for anything going into a report or decision. The AI is a co-pilot for analysis, not a replacement for review.
+* Always validate AI-generated SQL while setting up before treating the output as final, especially for anything going into a report or decision. The AI is a co-pilot for analysis, not a replacement for review.
 
 ### Saving your output
 
