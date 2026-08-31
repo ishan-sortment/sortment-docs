@@ -13,6 +13,7 @@
 * [Intelligence blocks](using-sortment-ai/intelligence-blocks.md)
 * [KPIs](using-sortment-ai/kpis.md)
 * [Tasks](using-sortment-ai/tasks.md)
+* [Data analysis](using-sortment-ai/data-analysis.md)
 
 ## Schema
 
